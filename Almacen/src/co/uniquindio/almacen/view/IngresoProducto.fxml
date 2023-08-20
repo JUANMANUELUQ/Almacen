@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.almacen.controllers.IngresoProductoController">
+   <children>
+      <GridPane layoutX="165.0" layoutY="73.0" AnchorPane.bottomAnchor="396.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="60.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.0" minWidth="10.0" prefWidth="169.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="525.0" minWidth="10.0" prefWidth="213.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="525.0" minWidth="10.0" prefWidth="206.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="525.0" minWidth="10.0" prefWidth="213.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo:">
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Valor unitario:" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad en existencia:" wrappingWidth="91.56005859375" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de producto:" wrappingWidth="82.19091796875" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de vencimiento:" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo de aprobacion:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Temperatura de refrigeracion:" wrappingWidth="148.783203125" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de envasado:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Peso de envase:" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pais de origen:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin></Text>
+            <TextField fx:id="txtCodigo" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtNombre" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtValorUnitario" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtCantidadExistencia" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <ComboBox fx:id="cmbTipoProducto" onAction="#bloquearDatosCorrespondientes" prefWidth="462.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtCodigoAprobacion" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtTempRecomendadaRefrigeracion" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtPesoEnvase" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <ComboBox fx:id="paisOrigen" prefWidth="500.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <DatePicker fx:id="fechaVencimiento" prefWidth="500.0" GridPane.columnIndex="3" />
+            <DatePicker fx:id="fechaEnvasado" prefWidth="500.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tableProductos" layoutX="73.0" layoutY="423.0" onMouseClicked="#ponerDatos" prefHeight="214.0" prefWidth="670.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+        <columns>
+          <TableColumn fx:id="columnCodigo" prefWidth="133.0" text="Codigo" />
+          <TableColumn fx:id="columnNombre" prefWidth="154.0" text="Nombre" />
+            <TableColumn fx:id="columnValorUnitario" prefWidth="111.0" text="Valor unitario" />
+            <TableColumn fx:id="columnCantExistencia" prefWidth="120.0" text="Cant. existencia" />
+            <TableColumn fx:id="columnTipoProducto" prefWidth="151.0" text="Tipo de producto" />
+        </columns>
+      </TableView>
+      <Text layoutX="16.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion:" AnchorPane.leftAnchor="60.0" />
+      <TextArea fx:id="txtDescripcion" layoutX="218.0" layoutY="403.0" prefHeight="70.0" prefWidth="462.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="30.0" />
+      <Separator layoutY="493.0" prefHeight="0.0" prefWidth="730.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+      <AnchorPane layoutX="90.0" layoutY="-61.0" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="323.0" layoutY="11.0" text="Productos" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="118.0" layoutY="642.0" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="39.0" layoutY="17.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button fx:id="btnActualizar" layoutX="54.0" layoutY="646.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="25.0" prefWidth="134.0" styleClass="boton_listaEmpleado" stylesheets="@../application/application.css" text="Actualizar">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/iconos/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" layoutX="192.0" layoutY="646.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="134.0" styleClass="boton_listaEmpleado" stylesheets="@../application/application.css" text="Eliminar">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/iconos/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnAgregar" layoutX="333.0" layoutY="646.0" mnemonicParsing="false" onAction="#agregar" prefHeight="25.0" prefWidth="134.0" styleClass="boton_listaEmpleado" stylesheets="@../application/application.css" text="Agregar">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/iconos/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnVolver" layoutX="474.0" layoutY="646.0" mnemonicParsing="false" onAction="#volver" prefHeight="25.0" prefWidth="134.0" styleClass="boton_listaEmpleado" stylesheets="@../application/application.css" text="Volver">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

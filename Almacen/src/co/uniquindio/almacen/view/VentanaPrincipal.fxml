@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.almacen.controllers.VentanaPrincipalController">
+   <children>
+      <Pane layoutX="-2.0" layoutY="49.0" prefHeight="251.0" prefWidth="607.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fx:id="fondo_1" fitHeight="335.0" fitWidth="629.0" layoutX="-2.0" layoutY="-60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/desktop-wallpaper-company-profile.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="335.0" layoutY="-2.0" opacity="0.66" prefHeight="258.0" prefWidth="277.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label layoutX="25.0" layoutY="14.0" text="Seleccione una opción" textFill="#3a5e80">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <HBox alignment="CENTER" layoutX="339.0" layoutY="207.0" prefHeight="30.0" prefWidth="265.0" spacing="90.0" />
+            <HBox alignment="CENTER" layoutX="339.0" layoutY="56.0" prefHeight="30.0" prefWidth="257.0" spacing="100.0">
+               <children>
+                  <Button fx:id="btnProductos" layoutX="360.0" layoutY="90.0" mnemonicParsing="false" onAction="#productos" prefHeight="25.0" prefWidth="197.0" style="-fx-background-color: #2e2e2e;" text="Gestionar productos" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </HBox>
+            <Button fx:id="btnClientes" layoutX="369.0" layoutY="102.0" mnemonicParsing="false" onAction="#clientes" prefHeight="25.0" prefWidth="198.0" style="-fx-background-color: #2e2e2e;" text="Gestionar clientes" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnVentas" layoutX="370.0" layoutY="199.0" mnemonicParsing="false" onAction="#ventas" prefHeight="25.0" prefWidth="197.0" style="-fx-background-color: #2e2e2e;" text="Gestionar ventas" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="registroVentas" layoutX="369.0" layoutY="151.0" mnemonicParsing="false" onAction="#registroVentas" prefHeight="25.0" prefWidth="197.0" style="-fx-background-color: #2e2e2e;" text="Ver registros" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label alignment="CENTER" layoutX="237.0" layoutY="6.0" prefHeight="35.0" prefWidth="127.0" text="Almacen" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
