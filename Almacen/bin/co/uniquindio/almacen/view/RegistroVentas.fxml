@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.almacen.controllers.RegistroVentasController">
+   <children>
+      <HBox alignment="CENTER" layoutX="37.0" layoutY="82.0" prefHeight="235.0" prefWidth="600.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TableView fx:id="tableVentas" layoutX="37.0" layoutY="89.0" onMouseClicked="#ponerDatosTablaDetalles" prefHeight="200.0" prefWidth="332.0">
+              <columns>
+                <TableColumn fx:id="columnCodigo" prefWidth="75.0" text="Codigo" />
+                <TableColumn fx:id="columnFecha" prefWidth="75.0" text="Fecha" />
+                  <TableColumn fx:id="columnTotal" prefWidth="94.0" text="Total" />
+                  <TableColumn fx:id="columnIva" prefWidth="87.0" text="Iva" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tableDetalles" layoutX="366.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="columnCantidad" prefWidth="75.0" text="Cantidad" />
+                <TableColumn fx:id="columnSubtotal" prefWidth="124.0" text="Subtotal" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="175.0" layoutY="-69.0" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="87.0" layoutY="13.0" text="Registro de ventas" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="211.0" layoutY="260.0" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="51.0" layoutY="14.0" spacing="50.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button layoutX="117.0" layoutY="338.0" mnemonicParsing="false" onAction="#verCliente" text="Ver cliente">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="293.0" layoutY="338.0" mnemonicParsing="false" onAction="#verProducto" text="Ver producto">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="486.0" layoutY="338.0" mnemonicParsing="false" onAction="#volver" text="Volver">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
